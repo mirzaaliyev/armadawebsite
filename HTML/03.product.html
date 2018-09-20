@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="pinterest" content="nopin" />
+
+  <title>03. Product Page</title>
+  <meta name="description" content="<?= $site->description()->html() ?>">
+
+  <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+  <meta name="google" content="notranslate">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+<header class="wrapper-full header">
+
+  <div class="logo">
+    <a href="01.main.html"><h1>LVMH</h1></a>
+  </div>
+
+  <div class="nav nav-main">
+    <div class="search"><a href="#search"><i class="fa fa-search"></i></a></div>
+    <div class="fav"><a href="#fav"><i class="fa fa-heart"></i></a></div>
+    <div class="bag"><a href="#bag"><i class="fa fa-shopping-cart"></i></a></div>
+    <div class="lang"><a href="#lang">EN</a></div>
+    <div class="login"><a href="#login">Login</a> | <a href="#reg">Registration</a></div>
+    <div class="bars"><i class="fa fa-bars"></i></div>
+  </div>
+
+</header><!-- header -->
+
+<main class="wrapper-full main">
+
+  <section class="product-section">
+    <div class="product-photo">
+      <figure>
+        <img src="assets/img/product-single.png" />
+      </figure>
+    </div><!-- intro-image -->
+    <div class="product-info">
+      <h1 class="product-title">Hennessy Very Special</h1>
+      <div class="product-desc"><p>The Hennessy cognac distillery was founded by Richard Hennessy, an Irish officer serving in the army of Louis XV.The Richard Hennesy, Irish captain went to heal Wounds to France, to the garrison at island of Re.</p></div>
+      <div class="product-add-fav"><a href="#fav"><i class="fa fa-heart"></i> Add to Favorites</a></div>
+      <div class="product-meta">
+        <div class="product-volume">
+          #volume
+        </div>
+        <div class="product-qty">
+          <select class="form-control input-lg">
+            <option disabled="" selected="" value="">0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="product-package">
+          #package
+        </div>
+      </div>
+      <div class="product-price-section">
+        <div class="product-price">35.67 azn</div>
+        <div class="product-submit"><a class="btn btn-default">Add to Bag</a></div>
+      </div><!-- product-price -->
+    </div><!-- intro-text -->
+  </section><!-- intro -->
+
+</main><!-- wrapper-full main -->
+
+<footer class="wrapper-full footer">
+  <div class="copyright">© 2018. All Right Reserved</div>
+</footer><!-- footer -->
+
+</body>
+</html>

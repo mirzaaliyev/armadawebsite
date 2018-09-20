@@ -1,0 +1,57 @@
+// Configuration
+
+//Base sizes
+$base-font-size:         100 !default;
+$base-font-size-desktop: 112.5 !default; // 112.5
+$line-height:            1.5 !default;
+$line-height-desktop:    1.5 !default;
+$max-width:              90 !default;
+$content-width:          45 !default;
+$content-width-wide:     50 !default;
+$content-width-wider:    60 !default;
+
+// Colors
+$color-font-body:        #ccc8a5 !default;
+$fcolor1:                #DDD !default;
+$fcolor2:                #8282AA !default;
+$fcolor3:                #737580 !default;
+
+$color-background:       #000 !default;
+
+$color-banners:          #0076ff !default; // blue
+$color-highlight1:       #FF5151 !default; // red
+$color-highlight2:       #ccc8a5 !default; // #FDC23E orange
+
+$color-font-headings:    $color-font-body !default;
+
+$color-link-normal:      #9b8c5b;
+$color-link-hover:       #FFF; // #c7b374;
+$color-link-active:      #c7b374;
+$color-link-visited:     #c7b374;
+
+// Font themes
+$font-body:              "Civita", -apple-system, Helvetica, Arial, Sans-serif;
+$font-alt:               -apple-system, Helvetica, Arial, Sans-serif;
+$font-headings:          $font-body;
+
+// Calculations
+
+// Mobile base & leading
+$base: 16 * ($base-font-size / 100);
+$leading: round($base * $line-height);
+$leading-rem: $leading / $base;
+
+// Desktop base & leading
+$base-desktop: 16 * ($base-font-size-desktop / 100);
+$leading-desktop: round($base-desktop * $line-height-desktop);
+$leading-rem-desktop: $leading-desktop / $base-desktop;
+
+
+$wrapper-half-px:        #{ $content-width * $base-desktop * .6 + 'px'};
+$wrapper-half-rem:       #{ $content-width * .6 + 'rem'};
+$wrapper-px:             #{ $content-width * $base-desktop + 'px'};
+$wrapper-rem:            #{ $content-width + 'rem'};
+$wrapper-wide-px:        #{ $content-width-wide * $base-desktop + 'px'};
+$wrapper-wide-rem:       #{ $content-width-wide + 'rem'};
+$wrapper-wider-px:       #{ $content-width-wider * $base-desktop + 'px'};
+$wrapper-wider-rem:      #{ $content-width-wider + 'rem'};
