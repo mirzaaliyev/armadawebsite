@@ -1,3 +1,4 @@
-# HTML Sources for Armada Website
+# readme
 
-📁 HTML — sources to work with.
+📁 HTML — folder contaning sources.
+📁 SCSS — SASS files.
