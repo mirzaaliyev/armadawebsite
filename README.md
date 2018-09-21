@@ -1,3 +1,9 @@
-# HTML Sources for Armada Website
+# readme
 
-📁 HTML — sources to work with.
+All needed sources are in 📁HTML folder.
+
+## roadmap
+
+- make responsive layout
+- add modal windows
+- add static pages (Contacts, About Us, etc.)
