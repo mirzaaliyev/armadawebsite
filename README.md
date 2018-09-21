@@ -1,5 +1,3 @@
 # readme
 
-📁 HTML — folder contaning sources.
-
-📁 SCSS — SASS files.
+All needed sources are in 📁HTML folder.
