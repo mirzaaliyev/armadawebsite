@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/main.css">
 
@@ -55,14 +57,19 @@
       <div class="product-add-fav"><a href="#fav"><i class="fa fa-heart"></i> Add to Favorites</a></div>
       <div class="product-meta">
         <div class="product-volume">
-          #volume
+          <select class="form-control input-lg">
+            <option disabled="" selected="" value="">Select volume</option>
+            <option>0.35 ml</option>
+            <option>0.5 ml</option>
+            <option>0.75 ml</option>
+          </select>
         </div>
         <div class="product-qty">
           <select class="form-control input-lg">
-            <option disabled="" selected="" value="">0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            <option disabled="" selected="" value="">Select quantity</option>
+            <option>× 1</option>
+            <option>× 2</option>
+            <option>× 3</option>
           </select>
         </div>
         <div class="product-package">
@@ -76,11 +83,25 @@
     </div><!-- intro-text -->
   </section><!-- intro -->
 
+  <div class="products-slider-section autoplay">
+    <div class="products-slider-item"><figure><img src="assets/img/product_sm_1.png" /></figure></div>
+    <div class="products-slider-item"><figure><img src="assets/img/product_sm_2.png" /></figure></div>
+    <div class="products-slider-item"><figure><img src="assets/img/product_sm_3.png" /></figure></div>
+    <div class="products-slider-item"><figure><img src="assets/img/product_sm_4.png" /></figure></div>
+    <div class="products-slider-item"><figure><img src="assets/img/product_sm_5.png" /></figure></div>
+    <div class="products-slider-item"><figure><img src="assets/img/product_sm_6.png" /></figure></div>
+  </div>
+
 </main><!-- wrapper-full main -->
 
 <footer class="wrapper-full footer">
   <div class="copyright">© 2018. All Right Reserved</div>
 </footer><!-- footer -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.settings.js"></script>
 
 </body>
 </html>

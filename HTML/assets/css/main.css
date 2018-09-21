@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(normalize.css);
 /* Links
    ========================================================================== */
@@ -207,24 +208,32 @@ form {
   form small {
     color: #DDD; }
 
-input {
+input,
+select {
   color: #ccc8a5;
   background: rgba(221, 221, 221, 0.05);
   box-sizing: border-box;
   outline: none; }
-  input[type=text], input[type=email] {
+  input[type=text], input[type=email],
+  select[type=text],
+  select[type=email] {
     padding: .75rem;
     margin: .1rem 0;
     border-radius: .2rem;
     border: 1px solid rgba(130, 130, 170, 0.5);
     width: 60%; }
-    input[type=text]:focus, input[type=email]:focus {
+    input[type=text]:focus, input[type=email]:focus,
+    select[type=text]:focus,
+    select[type=email]:focus {
       box-shadow: 0 0 1rem rgba(0, 118, 255, 0.5);
       border: 1px solid rgba(130, 130, 170, 0.3); }
   @media (max-width: 641px) {
-    input[type=text], input[type=email] {
+    input[type=text], input[type=email],
+    select[type=text],
+    select[type=email] {
       width: 100% !important; } }
-  input::placeholder {
+  input::placeholder,
+  select::placeholder {
     color: rgba(204, 200, 165, 0.25) !important;
     font-weight: 300;
     opacity: 1; }
@@ -233,6 +242,11 @@ form label {
   display: block;
   margin: 0px 0px;
   margin: 0rem 0rem; }
+
+select {
+  border-color: rgba(204, 200, 165, 0.5);
+  font-size: 12.8px;
+  font-size: 0.8rem; }
 
 /* fontawesome styles */
 .fa, .far, .fab, .fas {
@@ -441,6 +455,84 @@ form label {
         margin-right: 0; }
       .product-section .product-info .product-price-section .product-submit {
         margin-left: 2rem; }
+
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); }
+.products-slider-section {
+  margin-top: 4rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  /* Arrows */ }
+  .products-slider-section .products-slider-item {
+    outline: none; }
+    .products-slider-section .products-slider-item figure {
+      max-width: 230px; }
+      .products-slider-section .products-slider-item figure img {
+        width: 100%; }
+  .products-slider-section .slick-prev,
+  .products-slider-section .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent; }
+  .products-slider-section .slick-prev:hover,
+  .products-slider-section .slick-prev:focus,
+  .products-slider-section .slick-next:hover,
+  .products-slider-section .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent; }
+  .products-slider-section .slick-prev:hover:before,
+  .products-slider-section .slick-prev:focus:before,
+  .products-slider-section .slick-next:hover:before,
+  .products-slider-section .slick-next:focus:before {
+    opacity: 1; }
+  .products-slider-section .slick-prev.slick-disabled:before,
+  .products-slider-section .slick-next.slick-disabled:before {
+    opacity: .25; }
+  .products-slider-section .slick-prev:before,
+  .products-slider-section .slick-next:before {
+    font-family: 'slick';
+    font-size: 1.5rem;
+    line-height: 1;
+    opacity: .5;
+    color: #ccc8a5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .products-slider-section .slick-prev {
+    left: -25px; }
+  .products-slider-section [dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto; }
+  .products-slider-section .slick-prev:before {
+    content: '←'; }
+  .products-slider-section [dir='rtl'] .slick-prev:before {
+    content: '→'; }
+  .products-slider-section .slick-next {
+    right: -25px; }
+  .products-slider-section [dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px; }
+  .products-slider-section .slick-next:before {
+    content: '→'; }
+  .products-slider-section [dir='rtl'] .slick-next:before {
+    content: '←'; }
 
 /* Header
    ========================================================================== */
