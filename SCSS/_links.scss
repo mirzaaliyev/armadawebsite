@@ -43,11 +43,10 @@ a {
    ========================================================================== */
    .btn {
      border: 0;
-     padding: .7rem 1rem;
+     padding: .5rem .7rem;
      display: inline-block;
-     border-radius: .2rem;
+     border-radius: .1rem;
      margin: 0 1rem 1rem 0;
-     font-weight: bold;
      border: 0;
      &:hover {
        cursor: pointer;
@@ -61,6 +60,14 @@ a {
      background: $color-highlight2;
      &:hover {
        background: $color-link-hover;
+       border-color: rgba($color-highlight2,0) !important;
+     }
+   }
+   .btn-black {
+     color: $color-highlight1 !important;
+     background: $color-background;
+     &:hover {
+       background: rgba($color-link-normal,1);
        border-color: rgba($color-highlight2,0) !important;
      }
    }

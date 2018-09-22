@@ -411,6 +411,12 @@ section {
   }
 }
 
+.product-price {
+  span {
+    font-family: 'AZN'
+  }
+}
+
 .product-section {
   width: 100%;
   display: flex;
@@ -480,14 +486,25 @@ section {
   }
 }
 
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/slick.eot');
+  src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/slick.woff') format('woff'),
+  url('./fonts/slick.ttf') format('truetype'),
+  url('./fonts/slick.svg#slick') format('svg');
+}
+@font-face {
+  font-family: 'AZN';
+  font-weight: bold;
+  font-style: bold;
+  src: url('./fonts/jaznb.eot');
+  src: url('./fonts/jaznb.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/jaznb.woff') format('woff'),
+  url('./fonts/jaznb.ttf') format('truetype'),
+  url('./fonts/jaznb.svg#jaznb') format('svg');
 }
 
 .products-slider-section {
@@ -680,5 +697,90 @@ footer {
 @media (max-width: 641px) {
   footer {
     @include margin(0,0);
+  }
+}
+
+/* Modal Windows
+   ========================================================================== */
+
+.added-to-cart-modal {
+  color: $color-background;
+  font-family: $font-alt;
+  margin: 0 1rem 0;
+
+  a:hover {
+    color: $color-link-active
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal-title {
+    @include font-size(1.4);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid rgba($color-font-body,.5);
+  }
+  .added-to-cart-item {
+    display: flex;
+    flex-flow: row wrap;
+
+    .image-container {
+      margin: 0;
+
+      figure {
+        img {
+          max-width: 200px;
+          margin: 0;
+        }
+      }
+    }
+    .info-container {
+      margin: 1rem 0 0;
+      display: flex;
+      flex-flow: row wrap;
+      flex-grow: 1;
+
+      .name-container {
+        margin-left: 0;
+
+        .product-name {
+          font-family: $font-alt;
+          text-transform: uppercase;
+          letter-spacing: .1rem;
+        }
+        .product-format,
+        .product-fav {
+          color: rgba($color-background, .5);
+          @include font-size(.8);
+        }
+        .product-fav {
+          margin-top: 1rem;
+        }
+      }
+      .qty-container {
+        margin-right: 0;
+        display: flex;
+        flex-flow: row wrap;
+
+        .product-price {
+          font-weight: bold;
+          margin-left: 2rem
+        }
+      }
+    }
+  }
+  .modal-checkout {
+    text-align: right;
+
+    .btn {
+      margin-right: 0;
+      margin-left: 1rem;
+    }
   }
 }

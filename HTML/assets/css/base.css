@@ -30,11 +30,10 @@ a {
    ========================================================================== */
 .btn {
   border: 0;
-  padding: .7rem 1rem;
+  padding: .5rem .7rem;
   display: inline-block;
-  border-radius: .2rem;
+  border-radius: .1rem;
   margin: 0 1rem 1rem 0;
-  font-weight: bold;
   border: 0; }
   .btn:hover {
     cursor: pointer; }
@@ -46,6 +45,13 @@ a {
   background: #ccc8a5; }
   .btn-default:hover {
     background: #FFF;
+    border-color: rgba(204, 200, 165, 0) !important; }
+
+.btn-black {
+  color: #FFFFFF !important;
+  background: #000; }
+  .btn-black:hover {
+    background: #9b8c5b;
     border-color: rgba(204, 200, 165, 0) !important; }
 
 /* Navigation
