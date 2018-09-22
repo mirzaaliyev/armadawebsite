@@ -3,7 +3,9 @@
 All needed sources are in 📁HTML folder.
 
 **21.09**
-“Add to Bag” modal added on product page.
+
+- “Add to Bag” modal added on product page.
+- Shopping Bag added.
 
 ## roadmap
 
