@@ -2,6 +2,9 @@
 
 All needed sources are in 📁HTML folder.
 
+**21.09**
+“Add to Bag” modal added on product page.
+
 ## roadmap
 
 - make responsive layout
