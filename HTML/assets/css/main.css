@@ -630,6 +630,11 @@ footer {
   border-radius: .2rem; }
   .shopping-bag .bag-container {
     width: 80%; }
+  .shopping-bag .bag-empty {
+    color: #9b8c5b;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
   .shopping-bag a:hover {
     color: #c7b374; }
   .shopping-bag p {

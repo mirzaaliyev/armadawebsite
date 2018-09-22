@@ -730,6 +730,13 @@ footer {
     width: 80%;
   }
 
+  .bag-empty {
+    color: $color-link-normal;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   a:hover {
     color: $color-link-active
   }
