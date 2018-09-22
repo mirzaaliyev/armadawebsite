@@ -220,6 +220,22 @@ select {
   background: rgba(221, 221, 221, 0.05);
   box-sizing: border-box;
   outline: none; }
+  input[type=number],
+  select[type=number] {
+    color: #9b8c5b;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: .25rem;
+    border: 1px solid #ccc8a5;
+    border-radius: .25rem;
+    width: 5rem;
+    margin: 0; }
+  input[type=checkbox],
+  select[type=checkbox] {
+    border: 1px solid #ccc8a5;
+    border-radius: .25rem;
+    margin-right: .25rem; }
   input[type=text], input[type=email],
   select[type=text],
   select[type=email] {
@@ -603,6 +619,109 @@ footer {
   footer {
     margin: 0px 0px;
     margin: 0rem 0rem; } }
+/* Shopping Bag
+   ========================================================================== */
+.shopping-bag {
+  color: #000;
+  font-family: -apple-system, Helvetica, Arial, Sans-serif;
+  background: #FFFFFF;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .2rem; }
+  .shopping-bag .bag-container {
+    width: 80%; }
+  .shopping-bag a:hover {
+    color: #c7b374; }
+  .shopping-bag p {
+    margin: 0;
+    padding: 0; }
+  .shopping-bag .bag-title {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid rgba(204, 200, 165, 0.5); }
+  .shopping-bag .bag-item {
+    display: flex;
+    flex-flow: row wrap; }
+    .shopping-bag .bag-item .image-container {
+      margin: 0; }
+      .shopping-bag .bag-item .image-container figure img {
+        max-width: 200px;
+        margin: 0; }
+    .shopping-bag .bag-item .info-container {
+      margin: 1rem 0 0;
+      display: flex;
+      flex-flow: row wrap;
+      flex-grow: 1; }
+      .shopping-bag .bag-item .info-container .name-container {
+        margin-left: 0; }
+        .shopping-bag .bag-item .info-container .name-container .product-name {
+          font-family: -apple-system, Helvetica, Arial, Sans-serif;
+          text-transform: uppercase;
+          letter-spacing: .1rem; }
+        .shopping-bag .bag-item .info-container .name-container .product-format,
+        .shopping-bag .bag-item .info-container .name-container .product-fav {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 12.8px;
+          font-size: 0.8rem; }
+        .shopping-bag .bag-item .info-container .name-container .product-gift {
+          font-size: 12.8px;
+          font-size: 0.8rem; }
+        .shopping-bag .bag-item .info-container .name-container .product-fav,
+        .shopping-bag .bag-item .info-container .name-container .product-gift {
+          margin-top: 1rem; }
+      .shopping-bag .bag-item .info-container .qty-container {
+        text-align: right;
+        margin-right: 0;
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%; }
+        .shopping-bag .bag-item .info-container .qty-container .product-qty {
+          width: 60%; }
+          .shopping-bag .bag-item .info-container .qty-container .product-qty .product-remove {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 12.8px;
+            font-size: 0.8rem; }
+        .shopping-bag .bag-item .info-container .qty-container .product-price {
+          font-weight: bold;
+          margin-left: 0;
+          margin-right: 0;
+          width: 30%; }
+  .shopping-bag .bag-checkout {
+    text-align: right;
+    border-top: 1px solid rgba(204, 200, 165, 0.5);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem; }
+    .shopping-bag .bag-checkout .total-container {
+      font-size: 22.4px;
+      font-size: 1.4rem;
+      width: 40%;
+      margin-right: 0;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-flow: row wrap; }
+      .shopping-bag .bag-checkout .total-container .total-text {
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        width: 50%; }
+      .shopping-bag .bag-checkout .total-container .total-price {
+        text-align: right;
+        font-weight: bold;
+        width: 50%; }
+    .shopping-bag .bag-checkout .total-info {
+      font-size: 13.6px;
+      font-size: 0.85rem;
+      color: #ccc8a5;
+      margin-bottom: 1.5rem; }
+    .shopping-bag .bag-checkout .btn {
+      margin-right: 0;
+      margin-left: 1rem; }
+
 /* Modal Windows
    ========================================================================== */
 .added-to-cart-modal {
