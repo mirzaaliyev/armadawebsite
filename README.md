@@ -6,6 +6,7 @@ All needed sources are in 📁HTML folder.
 
 - “Add to Bag” modal added on product page.
 - Shopping Bag added.
+- Empty Shopping Bag added.
 
 ## roadmap
 
