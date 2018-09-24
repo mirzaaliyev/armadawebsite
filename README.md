@@ -8,6 +8,14 @@ All needed sources are in 📁HTML folder.
 - Shopping Bag added.
 - Empty Shopping Bag added.
 
+**24.09**
+
+- Registration and Login modals.
+- Delivery Address section added.
+- Thank You section added.
+- Favorites section added.
+- Some minor fixes and improvements.
+
 ## roadmap
 
 - make responsive layout
