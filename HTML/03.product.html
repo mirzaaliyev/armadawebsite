@@ -38,6 +38,18 @@
       width: '70%',
       offset: {x: 0, y: -100}
     });
+    new jBox('Modal', {
+      attach: '#modalReg',
+      content: $('#modalRegContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalLogin',
+      content: $('#modalLoginContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
   });
   </script>
 
@@ -49,10 +61,10 @@
 
   <div class="nav nav-main">
     <div class="search"><a href="#search"><i class="fa fa-search"></i></a></div>
-    <div class="fav"><a href="#fav"><i class="fa fa-heart"></i></a></div>
+    <div class="fav"><a href="09.favorites.html"><i class="fa fa-heart"></i></a></div>
     <div class="bag"><a href="04.shopping-bag.html"><i class="fa fa-shopping-cart"></i>&nbsp;3</a></div>
     <div class="lang"><a href="#lang">EN</a></div>
-    <div class="login"><a href="#login">Login</a> | <a href="#reg">Registration</a></div>
+    <div class="login"><a href="#" id="modalLogin">Login</a> | <a href="#" id="modalReg">Registration</a></div>
     <div class="bars"><i class="fa fa-bars"></i></div>
   </div>
 
@@ -140,10 +152,56 @@
     </div><!-- info-container -->
   </div><!-- added-to-cart-item -->
   <div class="modal-checkout">
-    <a class="btn btn-black" href="#checkout">Checkout</a>
+    <a class="btn btn-black" href="04.shopping-bag.html">Checkout</a>
   </div><!-- modal-checkout -->
 </div><!-- added-to-cart-modal -->
 
+<div style="display: none" class="registration" id="modalLoginContent">
+  <div class="modal-title">
+    Login
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="#">Login</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
+
+<div style="display: none" class="registration" id="modalRegContent">
+  <div class="modal-title">
+    Register
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name">
+
+      <label for="second_name">Second Name:</label>
+      <input type="text" id="second_name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <label for="confirm_password">Confirm password:</label>
+      <input type="password" id="confirm_password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="04.shopping-bag.html">Register</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
 
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.settings.js"></script>

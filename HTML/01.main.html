@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="pinterest" content="nopin" />
 
-  <title>01. Main Page</title>
+  <title>03. Product Page</title>
   <meta name="description" content="<?= $site->description()->html() ?>">
 
   <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
@@ -18,24 +18,53 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.4.9/Source/jBox.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.4.9/Source/jBox.css" rel="stylesheet">
 
 </head>
 <body>
 
+  <script>
+  $(document).ready(function() {
+    new jBox('Modal', {
+      attach: '#modalBag',
+      content: $('#modalBagContent'),
+      width: '70%',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalReg',
+      content: $('#modalRegContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalLogin',
+      content: $('#modalLoginContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+  });
+  </script>
+
 <header class="wrapper-full header">
 
   <div class="logo">
-    <h1>LVMH</h1>
+    <a href="01.main.html"><h1>LVMH</h1></a>
   </div>
 
   <div class="nav nav-main">
     <div class="search"><a href="#search"><i class="fa fa-search"></i></a></div>
-    <div class="fav"><a href="#fav"><i class="fa fa-heart"></i></a></div>
+    <div class="fav"><a href="09.favorites.html"><i class="fa fa-heart"></i></a></div>
     <div class="bag"><a href="04.shopping-bag.html"><i class="fa fa-shopping-cart"></i>&nbsp;3</a></div>
     <div class="lang"><a href="#lang">EN</a></div>
-    <div class="login"><a href="#login">Login</a> | <a href="#reg">Registration</a></div>
+    <div class="login"><a href="#" id="modalLogin">Login</a> | <a href="#" id="modalReg">Registration</a></div>
     <div class="bars"><i class="fa fa-bars"></i></div>
   </div>
 
@@ -108,6 +137,53 @@
 <footer class="wrapper-full footer">
   <div class="copyright">© 2018. All Right Reserved</div>
 </footer><!-- footer -->
+
+<div style="display: none" class="registration" id="modalLoginContent">
+  <div class="modal-title">
+    Login
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="#">Login</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
+
+<div style="display: none" class="registration" id="modalRegContent">
+  <div class="modal-title">
+    Register
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name">
+
+      <label for="second_name">Second Name:</label>
+      <input type="text" id="second_name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <label for="confirm_password">Confirm password:</label>
+      <input type="password" id="confirm_password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="04.shopping-bag.html">Register</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
 
 </body>
 </html>

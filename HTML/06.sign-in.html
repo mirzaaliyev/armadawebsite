@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="pinterest" content="nopin" />
+
+  <title>03. Product Page</title>
+  <meta name="description" content="<?= $site->description()->html() ?>">
+
+  <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+  <meta name="google" content="notranslate">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.4.9/Source/jBox.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.4.9/Source/jBox.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <script>
+  $(document).ready(function() {
+    new jBox('Modal', {
+      attach: '#modalBag',
+      content: $('#modalBagContent'),
+      width: '70%',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalReg',
+      content: $('#modalRegContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalLogin',
+      content: $('#modalLoginContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+  });
+  </script>
+
+<header class="wrapper-full header">
+
+  <div class="logo">
+    <a href="01.main.html"><h1>LVMH</h1></a>
+  </div>
+
+  <div class="nav nav-main">
+    <div class="search"><a href="#search"><i class="fa fa-search"></i></a></div>
+    <div class="fav"><a href="09.favorites.html"><i class="fa fa-heart"></i></a></div>
+    <div class="bag"><a href="04.shopping-bag.html"><i class="fa fa-shopping-cart"></i>&nbsp;3</a></div>
+    <div class="lang"><a href="#lang">EN</a></div>
+    <div class="login"><a href="#" id="modalLogin">Login</a> | <a href="#" id="modalReg">Registration</a></div>
+    <div class="bars"><i class="fa fa-bars"></i></div>
+  </div>
+
+</header><!-- header -->
+
+<main class="wrapper-full main">
+
+  <section class="shopping-bag">
+
+    <div class="bag-container">
+      <div class="bag-title">
+        Sign In
+      </div><!-- bag-title -->
+      <div class="sign-in-container">
+        <div class="sign-form">
+          <label for="email">Email address:</label><br />
+          <input type="email" id="email">
+
+          <div class="have-account">
+            <h2>Do you have an account?</h2>
+            <p><input type="radio" name="have-account" value="no" id="no"> <label for="no">No <small>(check out as guest)</small></label></p>
+            <p><input type="radio" name="have-account" value="yes" id="yes"> <label for="yes">Yes</label></p>
+          </div><!-- have-account -->
+
+          <div class="password">
+            <label for="password">Enter your password:</label><br />
+            <input type="password" id="password">
+          </div><!-- password -->
+          <hr />
+          <div class="checkout-btn">
+            <span class="total-info"><a class="btn btn-black" href="07.delivery-address.html">Continue</a>
+          </div><!-- checkout-btn -->
+        </div><!-- sign-form -->
+        <div class="order-summary">
+          <h3>Order Summary <small>3 items</small></h3>
+
+          <section class="shopping-bag">
+
+            <div class="bag-container">
+              <div class="bag-item">
+                <div class="image-container">
+                  <figure>
+                    <img src="assets/img/product2.png" />
+                  </figure>
+                </div><!-- image-container -->
+                <div class="info-container">
+                  <div class="name-container">
+                    <div class="product-name">Hennessy Very Special</div>
+                    <div class="product-format">Bottle — 75 cL</div>
+                  </div><!-- name-container -->
+                  <div class="qty-container">
+                    <div class="product-qty">
+                      Qty: 2
+                    </div><!-- product-qty -->
+                    <div class="product-price">
+                      144.00<span>m</span>
+                    </div><!-- product-price -->
+                  </div><!-- qty-container -->
+                </div><!-- info-container -->
+              </div><!-- bag-item -->
+              <div class="bag-item">
+                <div class="image-container">
+                  <figure>
+                    <img src="assets/img/product4.png" />
+                  </figure>
+                </div><!-- image-container -->
+                <div class="info-container">
+                  <div class="name-container">
+                    <div class="product-name">Hennessy Paradis Imperial</div>
+                    <div class="product-format">Bottle — 35 cL</div>
+                  </div><!-- name-container -->
+                  <div class="qty-container">
+                    <div class="product-qty">
+                      Qty: 2 &nbsp;&nbsp;<i class="far fa-gift" title="Gift packaging"></i>
+                    </div><!-- product-qty -->
+                    <div class="product-price">
+                      38.00<span>m</span>
+                    </div><!-- product-price -->
+                  </div><!-- qty-container -->
+                </div><!-- info-container -->
+              </div><!-- bag-item -->
+              <div class="bag-item">
+                <div class="image-container">
+                  <figure>
+                    <img src="assets/img/product7.png" />
+                  </figure>
+                </div><!-- image-container -->
+                <div class="info-container">
+                  <div class="name-container">
+                    <div class="product-name">Belvedere</div>
+                    <div class="product-format">Bottle — 75 cL</div>
+                  </div><!-- name-container -->
+                  <div class="qty-container">
+                    <div class="product-qty">
+                      Qty: 2
+                    </div><!-- product-qty -->
+                    <div class="product-price">
+                      64.00<span>m</span>
+                    </div><!-- product-price -->
+                  </div><!-- qty-container -->
+                </div><!-- info-container -->
+              </div><!-- bag-item -->
+              <div class="bag-checkout">
+                <div class="total-container">
+                  <div class="total-text">Total</div>
+                  <div class="total-price product-price">246.00<span>m</span></div>
+                </div><!-- total-container -->
+              </div><!-- bag-checkout -->
+            </div><!-- bag-container -->
+
+          </section><!-- shopping-bag -->
+
+        </div><!-- order-summary -->
+      </div><!-- sign-in-container -->
+    </div><!-- bag-container -->
+
+  </section><!-- shopping-bag -->
+
+</main><!-- wrapper-full main -->
+
+<footer class="wrapper-full footer">
+  <div class="copyright">© 2018. All Right Reserved</div>
+</footer><!-- footer -->
+
+<div style="display: none" class="registration" id="modalLoginContent">
+  <div class="modal-title">
+    Login
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="#">Login</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
+
+<div style="display: none" class="registration" id="modalRegContent">
+  <div class="modal-title">
+    Register
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name">
+
+      <label for="second_name">Second Name:</label>
+      <input type="text" id="second_name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <label for="confirm_password">Confirm password:</label>
+      <input type="password" id="confirm_password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="04.shopping-bag.html">Register</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
+
+</body>
+</html>
