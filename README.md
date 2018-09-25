@@ -16,6 +16,9 @@ All needed sources are in 📁HTML folder.
 - Favorites section added.
 - Some minor fixes and improvements.
 
+**25.09**
+- Hamburger menu added.
+
 ## roadmap
 
 - make responsive layout
