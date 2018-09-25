@@ -53,6 +53,8 @@
   });
   </script>
 
+<div class="wrapper-main">
+
 <header class="wrapper-full header">
 
   <div class="logo">
@@ -65,7 +67,23 @@
     <div class="bag"><a href="04.shopping-bag.html"><i class="fa fa-shopping-cart"></i>&nbsp;3</a></div>
     <div class="lang"><a href="#lang">EN</a></div>
     <div class="login"><a href="#" id="modalLogin">Login</a> | <a href="#" id="modalReg">Registration</a></div>
-    <div class="bars"><i class="fa fa-bars"></i></div>
+    <div class="bars">
+
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
   </div>
 
 </header><!-- header -->
@@ -91,6 +109,8 @@
 <footer class="wrapper-full footer">
   <div class="copyright">© 2018. All Right Reserved</div>
 </footer><!-- footer -->
+
+</div><!-- wrapper-main -->
 
 <div style="display: none" class="registration" id="modalLoginContent">
   <div class="modal-title">

@@ -17,7 +17,7 @@ All needed sources are in 📁HTML folder.
 - Some minor fixes and improvements.
 
 **25.09**
-- Hamburger menu added.
+- Hamburger menu added. <div class="wrapper-main"> added on all pages.
 
 ## roadmap
 
