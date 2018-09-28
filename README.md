@@ -19,6 +19,10 @@ All needed sources are in 📁HTML folder.
 **25.09**
 - Hamburger menu added. <div class="wrapper-main"> added on all pages.
 
+**28.09**
+- Language selector added.
+- Search form added.
+
 ## roadmap
 
 - make responsive layout

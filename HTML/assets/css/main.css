@@ -626,6 +626,54 @@ select {
       margin: 0 0 0 1rem; }
       .header .nav-main div a {
         border: 0; }
+    .header .nav-main .search input {
+      font-size: 14.4px;
+      font-size: 0.9rem;
+      outline: none; }
+      .header .nav-main .search input[type=search] {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        width: 25px;
+        padding-left: 10px;
+        padding: 0;
+        color: transparent;
+        cursor: pointer;
+        background: #000 url("../../assets/img/icon-search.svg") no-repeat 0.25rem center;
+        background-size: .9rem;
+        border: none;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s; }
+        .header .nav-main .search input[type=search]:focus {
+          width: 150px;
+          padding-left: 32px;
+          color: #ccc8a5;
+          background-color: #4d4d4d;
+          cursor: auto; }
+        .header .nav-main .search input[type=search]::-webkit-search-decoration, .header .nav-main .search input[type=search]::-webkit-search-cancel-button {
+          display: none; }
+      .header .nav-main .search input:-moz-placeholder, .header .nav-main .search input::-webkit-input-placeholder {
+        color: transparent; }
+    .header .nav-main .lang {
+      margin: 0 1.5rem 0 1rem; }
+    .header .nav-main .languagepicker {
+      display: inline-block;
+      position: absolute;
+      padding: 0;
+      height: 1.2rem;
+      overflow: hidden;
+      transition: all .3s ease;
+      margin: 0;
+      vertical-align: top;
+      z-index: 10;
+      border-radius: .25rem; }
+      .header .nav-main .languagepicker:hover {
+        height: 4.7rem;
+        background: #333333; }
+    .header .nav-main .languagepicker li {
+      display: block;
+      padding: 0 .5rem;
+      margin: 0; }
 
 /* Footer
    ========================================================================== */
