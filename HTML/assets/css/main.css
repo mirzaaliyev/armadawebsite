@@ -1080,3 +1080,114 @@ footer {
 */
 #menuToggle input:checked ~ ul {
   transform: none; }
+
+#modal_screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+#modal_screen.nope {
+  background-color: #000;
+  margin: 0 auto; }
+
+#modal_content {
+  position: fixed;
+  z-index: 1101;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  width: 290px;
+  /* if you adjust it from the original 290px, adjust the difference in the width of #modal_content nav too */
+  height: 290px;
+  /* if you adjust it from the original 290px, adjust the difference in the width of #modal_content nav too */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#modal_content .content_wrapper {
+  width: 90%;
+  margin: 2.5em auto 0;
+  text-align: center; }
+
+#modal_content h2 {
+  margin: 0 0 1.5rem;
+  color: #000; }
+
+#modal_content p {
+  max-width: 75%;
+  color: #000;
+  margin: 0 auto; }
+
+#modal_content nav {
+  display: table;
+  width: 282px;
+  margin: 0 auto 1rem;
+  color: #000; }
+
+#modal_content nav ul {
+  display: table-row;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+#modal_content nav li {
+  display: table-cell;
+  text-align: center;
+  width: auto; }
+
+#modal_content nav:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+#modal_content nav small {
+  display: block;
+  text-align: center;
+  margin: 1em 0 0; }
+
+#modal_content nav a.av_btn {
+  padding: .5rem;
+  display: block;
+  width: 80%;
+  border-radius: .2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: none;
+  letter-spacing: 0; }
+
+#modal_content nav .av_go {
+  background-color: #000; }
+
+#modal_content nav .av_no {
+  background-color: #000; }
+
+#modal_content nav .av_btn:hover {
+  background-color: #333333; }
+
+#modal_content #modal_regret_wrapper nav a.av_btn {
+  margin-top: 0; }
+
+@media (min-width: 688px) {
+  #modal_content {
+    width: 90%;
+    max-width: 500px;
+    border-radius: .2rem; }
+
+  #modal_content .content_wrapper {
+    margin: 2.5em auto 0;
+    text-align: center; }
+
+  #modal_content h2 {
+    margin: 0 0 1.5rem; }
+
+  #modal_content nav {
+    width: 396px; }
+
+  #modal_content nav a.av_btn {
+    padding: 1em;
+    margin: 1.6em auto 0; } }

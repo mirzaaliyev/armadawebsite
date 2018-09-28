@@ -22,6 +22,7 @@ All needed sources are in 📁HTML folder.
 **28.09**
 - Language selector added.
 - Search form added.
+- Age checking popup added.
 
 ## roadmap
 
