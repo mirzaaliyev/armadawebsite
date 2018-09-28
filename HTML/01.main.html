@@ -63,7 +63,7 @@
   <header class="wrapper-full header">
 
     <div class="logo">
-      <a href="01.main.html"><h1>LVMH</h1></a>
+      <h1>LVMH</h1>
     </div>
 
     <div class="nav nav-main">
@@ -109,6 +109,10 @@
           <figure title="[BRAND NAME 1]" alt="[BRAND NAME 1]">
             <div class="gradient"></div>
             <img src="assets/img/brand-item-1.png" alt="">
+            <video id="video" class="fade" loop muted preload="auto">
+              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <figcaption>Dom Pérignon</figcaption>
           </figure>
         </a><!-- brand-item -->
@@ -117,6 +121,10 @@
           <figure title="[BRAND NAME 1]" alt="[BRAND NAME 1]">
             <div class="gradient"></div>
             <img src="assets/img/brand-item-2.png" alt="">
+            <video id="video" class="fade" loop muted preload="auto">
+              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <figcaption>Moët & Chandon</figcaption>
           </figure>
         </a><!-- brand-item -->
@@ -125,6 +133,10 @@
           <figure title="[BRAND NAME 1]" alt="[BRAND NAME 1]">
             <div class="gradient"></div>
             <img src="assets/img/brand-item-3.png" alt="">
+            <video id="video" class="fade" loop muted preload="auto">
+              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <figcaption>Veuve Clicquot</figcaption>
           </figure>
         </a><!-- brand-item -->
@@ -133,6 +145,10 @@
           <figure title="[BRAND NAME 1]" alt="[BRAND NAME 1]">
             <div class="gradient"></div>
             <img src="assets/img/brand-item-4.png" alt="">
+            <video id="video" class="fade" loop muted preload="auto">
+              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <figcaption>Hennessy</figcaption>
           </figure>
         </a><!-- brand-item -->
@@ -141,6 +157,10 @@
           <figure title="[BRAND NAME 1]" alt="[BRAND NAME 1]">
             <div class="gradient"></div>
             <img src="assets/img/brand-item-5.png" alt="">
+            <video id="video" class="fade" loop muted preload="auto">
+              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <figcaption>Glenmorangie</figcaption>
           </figure>
         </a><!-- brand-item -->
@@ -149,6 +169,10 @@
           <figure title="[BRAND NAME 1]" alt="[BRAND NAME 1]">
             <div class="gradient"></div>
             <img src="assets/img/brand-item-6.png" alt="">
+            <video id="video" class="fade" loop muted preload="auto">
+              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <figcaption>Belvedere</figcaption>
           </figure>
         </a><!-- brand-item -->
@@ -215,6 +239,20 @@
     </form>
   </div><!-- added-to-cart-item -->
 </div><!-- registration -->
+
+<script>
+  var vid = document.getElementsByTagName("video");
+  [].forEach.call(vid, function (item) {
+    item.addEventListener('mouseover', hoverVideo, false);
+    item.addEventListener('mouseout', hideVideo, false); });
+
+    function hoverVideo(e){
+      this.play();
+    }
+    function hideVideo(e){
+      this.pause();
+    }
+</script>
 
 <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="assets/js/age-verification.js"></script>

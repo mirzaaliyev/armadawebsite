@@ -352,6 +352,20 @@ select {
       margin: 0; }
       .brands-section .brand-item figure img {
         width: 100%; }
+      .brands-section .brand-item figure:hover {
+        transition: opacity .25s ease-in-out; }
+        .brands-section .brand-item figure:hover img {
+          opacity: 0; }
+        .brands-section .brand-item figure:hover video {
+          opacity: 1; }
+      .brands-section .brand-item figure video {
+        transition: opacity .25s ease-in-out;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0; }
       .brands-section .brand-item figure figcaption {
         text-align: center;
         color: #DDD;

@@ -327,6 +327,24 @@ section {
       img {
         width: 100%;
       }
+      &:hover {
+        transition: opacity .25s ease-in-out;
+        img {
+          opacity: 0
+        }
+        video {
+          opacity: 1
+        }
+      }
+      video {
+        transition: opacity .25s ease-in-out;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left:0;
+      }
       figcaption {
         text-align: center;
         color: $fcolor1;

@@ -23,6 +23,7 @@ All needed sources are in 📁HTML folder.
 - Language selector added.
 - Search form added.
 - Age checking popup added.
+- Video on mouse over on the main page added.
 
 ## roadmap
 
