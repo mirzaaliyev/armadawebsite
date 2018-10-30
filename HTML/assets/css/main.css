@@ -433,15 +433,23 @@ select {
   display: flex;
   flex-flow: row wrap; }
   .collection-grid .nav-sub {
-    width: 20%; }
+    width: 15%; }
+    .collection-grid .nav-sub a {
+      border: 0; }
     .collection-grid .nav-sub h3 {
-      font-family: -apple-system, Helvetica, Arial, Sans-serif; }
+      font-family: -apple-system, Helvetica, Arial, Sans-serif;
+      font-size: 1rem;
+      margin-left: 2rem; }
     .collection-grid .nav-sub ul {
       background: rgba(204, 200, 165, 0.12);
       margin-top: 1rem;
-      padding-top: 1.5rem;
-      padding-bottom: 1rem;
-      border-radius: 0.5rem; }
+      padding: .75rem 0;
+      border-radius: .5rem; }
+      .collection-grid .nav-sub ul li {
+        padding: .5rem 1.5rem;
+        margin: 0; }
+        .collection-grid .nav-sub ul li.active {
+          background: rgba(204, 200, 165, 0.15); }
   .collection-grid .collection-section {
     width: 80%;
     display: flex;
@@ -1102,7 +1110,7 @@ footer {
   height: 100%;
   width: 100%;
   z-index: 1100;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.85); }
 
 #modal_screen.nope {
   background-color: #000;
@@ -1112,10 +1120,14 @@ footer {
   position: fixed;
   z-index: 1101;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background: rgba(255, 255, 255, 0);
+  background-image: url("../../assets/img/cutpaper.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
   width: 290px;
   /* if you adjust it from the original 290px, adjust the difference in the width of #modal_content nav too */
-  height: 290px;
+  height: 350px;
   /* if you adjust it from the original 290px, adjust the difference in the width of #modal_content nav too */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1128,7 +1140,7 @@ footer {
   margin: 2.5em auto 0;
   text-align: center; }
 
-#modal_content h2 {
+#modal_content h3 {
   margin: 0 0 1.5rem;
   color: #000; }
 
@@ -1139,7 +1151,7 @@ footer {
 
 #modal_content nav {
   display: table;
-  width: 282px;
+  width: 342px;
   margin: 0 auto 1rem;
   color: #000; }
 
@@ -1168,7 +1180,6 @@ footer {
   padding: .5rem;
   display: block;
   width: 80%;
-  border-radius: .2rem;
   text-decoration: none;
   color: #FFFFFF;
   text-transform: none;
@@ -1189,15 +1200,14 @@ footer {
 @media (min-width: 688px) {
   #modal_content {
     width: 90%;
-    max-width: 500px;
-    border-radius: .2rem; }
+    max-width: 500px; }
 
   #modal_content .content_wrapper {
     margin: 2.5em auto 0;
     text-align: center; }
 
-  #modal_content h2 {
-    margin: 0 0 1.5rem; }
+  #modal_content h3 {
+    margin: 1rem 0; }
 
   #modal_content nav {
     width: 396px; }

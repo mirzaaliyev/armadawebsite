@@ -9,11 +9,11 @@
 	height: 100%;
 	width: 100%;
 	z-index: 1100;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.4);
 }
 
 #modal_screen.nope {
-	background-color: #1e0924; 
+	background-color: #1e0924;
 }
 
 #modal_content {

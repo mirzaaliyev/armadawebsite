@@ -25,6 +25,10 @@ All needed sources are in 📁HTML folder.
 - Age checking popup added.
 - Video on mouse over on the main page added.
 
+**30.10**
+- Age verification design changed.
+- Collection menu design changed.
+
 ## roadmap
 
 - make responsive layout
