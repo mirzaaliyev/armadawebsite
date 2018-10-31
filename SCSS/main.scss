@@ -384,7 +384,11 @@ section {
 .special-offers-section {
   width: 22%;
   padding: 1rem;
-  background: #1a1a1a;
+  background: #090909;
+  background-image: url('../../assets/img/main-page-billboard.jpg');
+  background-position: left center;
+  background-size: cover;
+
 }
 
 /* Inner Page: Collection
@@ -458,13 +462,16 @@ section {
   .collection-section {
     width: 80%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: wrap;
+    align-content: stretch;
+
 
     .collection-item {
       width: 33.33%;
       color: $color-font-body;
       border: 0;
+      margin-left: 0;
+      margin-right: 0;
       &:hover {
         color: $color-link-hover;
       }

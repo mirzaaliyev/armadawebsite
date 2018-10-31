@@ -399,7 +399,10 @@ select {
 .special-offers-section {
   width: 22%;
   padding: 1rem;
-  background: #1a1a1a; }
+  background: #090909;
+  background-image: url("../../assets/img/main-page-billboard.jpg");
+  background-position: left center;
+  background-size: cover; }
 
 /* Inner Page: Collection
    ========================================================================== */
@@ -453,12 +456,14 @@ select {
   .collection-grid .collection-section {
     width: 80%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
+    flex-flow: wrap;
+    align-content: stretch; }
     .collection-grid .collection-section .collection-item {
       width: 33.33%;
       color: #ccc8a5;
-      border: 0; }
+      border: 0;
+      margin-left: 0;
+      margin-right: 0; }
       .collection-grid .collection-section .collection-item:hover {
         color: #FFF; }
     .collection-grid .collection-section figure {
@@ -823,7 +828,7 @@ footer {
       margin-right: 0;
       margin-left: 1rem; }
   .shopping-bag .sign-in-container {
-    font-family: "Civita", -apple-system, Helvetica, Arial, Sans-serif;
+    font-family: Georgia, serif;
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 2rem; }
