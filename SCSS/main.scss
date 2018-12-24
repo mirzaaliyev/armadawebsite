@@ -857,6 +857,80 @@ footer {
   }
 }
 
+
+.content-page {
+  color: $color-background;
+  background: $color-highlight1;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .2rem;
+
+  a {
+    color: $color-link-normal;
+
+    &:hover {
+      color: $color-background;
+      border-bottom-color: rgba($color-background,.3);
+    }
+  }
+
+  blockquote {
+    padding: 1.5rem 0;
+    border-top: 2px solid rgba($color-link-normal,.3);
+    border-bottom: 2px solid rgba($color-link-normal,.3)
+  }
+
+  blockquote,
+  blockquote p {
+    color: $color-background;
+    font-family: $font-alt;
+    text-align: center;
+    margin: 2rem 3rem;
+  }
+
+  figure {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      color: $color-link-normal;
+      @include font-size(.8);
+      margin-top: .25rem;
+    }
+
+    img {
+      border-radius: .5rem
+    }
+  }
+
+  .content-page-container {
+    width: 40rem;
+
+    h2, h3 {
+      font-family: $font-alt;
+      font-weight: bold;
+      color: $color-link-normal;
+      margin-top: 2.5rem;
+    }
+  }
+
+  .content-page-body {
+    //color: $color-background;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    .contact-form {
+      input {
+        width: 100% !important;
+        max-width: 20rem;
+      }
+    }
+  }
+}
+
+
 /* Shopping Bag
    ========================================================================== */
 

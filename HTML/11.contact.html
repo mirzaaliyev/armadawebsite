@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="pinterest" content="nopin" />
+
+  <title>11. Contact Us</title>
+  <meta name="description" content="<?= $site->description()->html() ?>">
+
+  <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+  <meta name="google" content="notranslate">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.4.9/Source/jBox.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.4.9/Source/jBox.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <script>
+  $(document).ready(function() {
+    new jBox('Modal', {
+      attach: '#modalBag',
+      content: $('#modalBagContent'),
+      width: '70%',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalReg',
+      content: $('#modalRegContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+    new jBox('Modal', {
+      attach: '#modalLogin',
+      content: $('#modalLoginContent'),
+      width: '350px',
+      offset: {x: 0, y: -100}
+    });
+  });
+  </script>
+
+<div class="wrapper-main">
+
+<header class="wrapper-full header">
+
+  <div class="logo">
+    <a href="01.main.html"><h1>LVMH</h1></a>
+  </div>
+
+  <div class="nav nav-main">
+    <div class="search"><input type="search"></div>
+    <div class="fav"><a href="09.favorites.html"><i class="fa fa-heart"></i></a></div>
+    <div class="bag"><a href="04.shopping-bag.html"><i class="fa fa-shopping-cart"></i>&nbsp;3</a></div>
+    <div class="lang">
+      <ul class="languagepicker">
+        <a href="#en"><li>EN</li></a>
+        <a href="#az"><li>AZ</li></a>
+        <a href="#ru"><li>RU</li></a>
+      </ul><!-- languagepicker -->
+    </div>
+    <div class="login"><a href="#" id="modalLogin">Login</a> | <a href="#" id="modalReg">Registration</a></div>
+    <div class="bars">
+
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+</header><!-- header -->
+
+<main class="wrapper-full main">
+
+  <article class="content-page">
+
+    <div class="content-page-container">
+      <div class="content-page-title">
+        <h2>Contact Us</h2>
+      </div><!-- bag-title -->
+      <div class="content-page-body">
+        <p>We will be happy to assist you with any question regarding online and in store purchases. Our representatives speak English, French, German, Spanish, Italian, Russian, Polish and Dutch.</p>
+        <h3>Our address</h3>
+        <p>Three Customer Services<br />
+          Hutchison 3G UK Ltd<br />
+          PO Box 333<br/>
+          Glasgow<br/>
+          G2 9AG</p>
+          <hr />
+        <h3>Stay in touch</h3>
+        <div class="contact-form">
+          <form>
+
+            <div class="form-group">
+              <div class="form-item">
+                <label for="your_name">Your name:</label>
+                <input type="text" id="your_name">
+              </div><!-- form-item -->
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+              </div><!-- form-item -->
+            </div><!-- form-group -->
+
+            <div class="form-group">
+              <div class="form-item">
+                <label for="phone_number">Phone number:</label>
+                <input type="text" id="phone_number">
+              </div><!-- form-item -->
+            </div><!-- form-group -->
+
+            <div class="form-item">
+              <label for="order_comments">Additional comments:</label>
+              <textarea rows="6" maxlength="450" style="width: 100%" id="order_comments"></textarea>
+              <small>Maximum 450 symbols</small>
+            </div><!-- form-item -->
+
+            <div class="checkout-btn">
+              <span class="total-info"><a class="btn btn-black" href="#">Send</a>
+            </div><!-- checkout-btn -->
+          </form>
+        </div><!-- sign-form -->
+      </div><!-- bag-empty -->
+    </div><!-- bag-container -->
+
+  </article><!-- content-page -->
+
+</main><!-- wrapper-full main -->
+
+<footer class="wrapper-full footer">
+  <div class="copyright">© 2018. All Right Reserved</div>
+</footer><!-- footer -->
+
+</div><!-- wrapper-main -->
+
+<div style="display: none" class="registration" id="modalLoginContent">
+  <div class="modal-title">
+    Login
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="#">Login</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
+
+<div style="display: none" class="registration" id="modalRegContent">
+  <div class="modal-title">
+    Register
+  </div><!-- modal-title -->
+  <div class="registration-content">
+    <form>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name">
+
+      <label for="second_name">Second Name:</label>
+      <input type="text" id="second_name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <label for="confirm_password">Confirm password:</label>
+      <input type="password" id="confirm_password">
+
+      <div class="modal-checkout">
+        <a class="btn btn-black" href="04.shopping-bag.html">Register</a>
+      </div><!-- modal-checkout -->
+    </form>
+  </div><!-- added-to-cart-item -->
+</div><!-- registration -->
+
+</body>
+</html>

@@ -721,6 +721,53 @@ footer {
   footer {
     margin: 0px 0px;
     margin: 0rem 0rem; } }
+.content-page {
+  color: #000;
+  background: #FFFFFF;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .2rem; }
+  .content-page a {
+    color: #9b8c5b; }
+    .content-page a:hover {
+      color: #000;
+      border-bottom-color: rgba(0, 0, 0, 0.3); }
+  .content-page blockquote {
+    padding: 1.5rem 0;
+    border-top: 2px solid rgba(155, 140, 91, 0.3);
+    border-bottom: 2px solid rgba(155, 140, 91, 0.3); }
+  .content-page blockquote,
+  .content-page blockquote p {
+    color: #000;
+    font-family: -apple-system, Helvetica, Arial, Sans-serif;
+    text-align: center;
+    margin: 2rem 3rem; }
+  .content-page figure {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; }
+    .content-page figure figcaption {
+      text-align: center;
+      font-style: italic;
+      color: #9b8c5b;
+      font-size: 12.8px;
+      font-size: 0.8rem;
+      margin-top: .25rem; }
+    .content-page figure img {
+      border-radius: 0.5rem; }
+  .content-page .content-page-container {
+    width: 40rem; }
+    .content-page .content-page-container h2, .content-page .content-page-container h3 {
+      font-family: -apple-system, Helvetica, Arial, Sans-serif;
+      font-weight: bold;
+      color: #9b8c5b;
+      margin-top: 2.5rem; }
+  .content-page .content-page-body {
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
+    .content-page .content-page-body .contact-form input {
+      width: 100% !important;
+      max-width: 20rem; }
+
 /* Shopping Bag
    ========================================================================== */
 .shopping-bag {
